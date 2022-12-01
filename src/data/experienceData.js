@@ -4,7 +4,7 @@ export const experienceData = [
     company: "Intern",
     jobtitle: "ML Engineer",
     startYear: "2022",
-    endYear: "--",
+    endYear: "",
   },
   {
     id: 2,
@@ -15,9 +15,9 @@ export const experienceData = [
   },
   {
     id: 3,
-    company: "Own Project For Meme Sharing & using ML",
+    company: "My Project For Meme Sharing & using ML on data",
     jobtitle: "Web Developer & ML Engineer",
     startYear: "2018",
-    endYear: "__",
+    endYear: "",
   },
 ];
