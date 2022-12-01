@@ -4,7 +4,7 @@ export const headerData = {
   name: "Bj Acharya",
   title: "ML Engineer",
   desciption:
-    "Nice to meet You!, As a results driven individual with a interest in machine learning and AI, I am working as machine learning engineer since this september. Currently, I am working as Intern in AI Marga Pvt. Ltd. I am experienced in data visualization, predictive analysis, statistical modeling and machine learning algorithms.",
+    "Hello , Thank you for taking the time to visit. I specialize in Machine Learning and AI. Fill your Senses with the highlights of work, read the juicy bits about me, or find out why you should hire me.",
   image:
     "https://cloud.eradcorporation.com/wl/?id=MezG0dFzl6UErgV4C08Dwjr6z9z9MUeG",
   resumePdf: resume,

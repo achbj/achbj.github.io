@@ -3,6 +3,6 @@ export const aboutData = {
   description1:
     "My name's Bijay. I'm a ML/AI Engineer based in Nepal, Kathmandu.",
   description2:
-    "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
+    "Nice to meet You!, As a results driven individual with a interest in machine learning and AI, I am working as machine learning engineer since this september. Currently, I am working as Intern in AI Marga Pvt. Ltd. I am experienced in data visualization, predictive analysis, statistical modeling and machine learning algorithms.",
   image: 2,
 };
