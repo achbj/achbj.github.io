@@ -1,8 +1,9 @@
 /* eslint-disable */
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
+import { GiArtificialIntelligence } from "react-icons/gi";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { IoLogoTableau } from "react-icons/io";
+import { IoLogoTableau } from "react-icons/io5";
 import {
   FaInternetExplorer,
   FaChalkboardTeacher,
@@ -21,12 +22,12 @@ export const servicesData = [
   // },
   {
     id: 2,
-    title: "Content Writing",
-    icon: <BiPencil />,
+    title: " ML Classification & Regression",
+    icon: <GiArtificialIntelligence />,
   },
   {
     id: 2,
-    title: " ML Classification & Regression",
+    title: "Content Writing",
     icon: <BiPencil />,
   },
 
@@ -56,11 +57,11 @@ export const servicesData = [
     title: "Web Design MERN, Django",
     icon: <BsCodeSlash />,
   },
-  {
-    id: 7,
-    title: "Photography",
-    icon: <FaCameraRetro />,
-  },
+  //   {
+  //     id: 7,
+  //     title: "Photography",
+  //     icon: <FaCameraRetro />,
+  //   },
   // {
   //     id: 8,
   //     title: 'Pinterest Virtual Assistant',
@@ -76,11 +77,11 @@ export const servicesData = [
   //     title: 'Data Entry',
   //     icon: <BsClipboardData />
   // },
-  {
-    id: 11,
-    title: "Ebook Writing",
-    icon: <FaTabletAlt />,
-  },
+  //   {
+  //     id: 11,
+  //     title: "Ebook Writing",
+  //     icon: <FaTabletAlt />,
+  //   },
   // {
   //     id: 12,
   //     title: 'Audio Transcription',
