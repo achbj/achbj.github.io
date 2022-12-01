@@ -15,7 +15,7 @@ export const projectsData = [
       "It is an academic project which uses both classificationa and regressoin model to specify the news as fake news or real news.",
     tags: ["Fake News Detection", "classification", "Regression"],
     code: "https://github.com/achbj/fake-news-detection",
-    demo: "https://github.com/achbj/fake-news-detection",
+    demo: "https://github.com/achbj/fake-news-detection/blob/main/Fake_news_detection.ipynb",
     image: one,
   },
   {
@@ -33,8 +33,8 @@ export const projectsData = [
     projectDesc:
       "We built a environment monitoring system that measure the temperature, humidity, smoke/pollution and harmful gases, rain using node mcu and various sensors. ",
     tags: ["c", "node MCU", "environment"],
-    code: "https://github.com/hhhrrrttt222111/developer-portfolio",
-    demo: "https://github.com/hhhrrrttt222111/developer-portfolio",
+    code: "https://1drv.ms/b/s!ApuNXxge894xgc85Vg-Pcfr8prPU5A?e=tY4qW3",
+    demo: "https://www.youtube.com/watch?v=hEBIgKrbwno",
     image: three,
   },
 ];
