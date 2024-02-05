@@ -22,18 +22,18 @@ export const servicesData = [
   // },
   {
     id: 2,
-    title: " ML Classification & Regression",
+    title: "ML Engineer Traditional / Deep Learning",
     icon: <GiArtificialIntelligence />,
   },
   {
     id: 2,
-    title: "Content Writing",
+    title: "AI Research",
     icon: <BiPencil />,
   },
 
   {
     id: 2,
-    title: " Tableau Data Visualization",
+    title: "Data Visualization",
     icon: <IoLogoTableau />,
   },
   // {
@@ -54,7 +54,7 @@ export const servicesData = [
 
   {
     id: 6,
-    title: "Web Design MERN, Django",
+    title: "Web MERN, Django",
     icon: <BsCodeSlash />,
   },
   //   {
@@ -87,11 +87,11 @@ export const servicesData = [
   //     title: 'Audio Transcription',
   //     icon: <AiFillAudio />
   // },
-  {
-    id: 13,
-    title: "Blog Posting",
-    icon: <FaRegNewspaper />,
-  },
+  // {
+  //   id: 13,
+  //   title: "Blog Posting",
+  //   icon: <FaRegNewspaper />,
+  // },
 ];
 
 // Uncomment your required service.
