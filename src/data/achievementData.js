@@ -1,5 +1,5 @@
 export const achievementData = {
-  bio: "It's just been a months since I completed by bachelors degree and started walking the path of ML Engineer, so a lot of achievements are on the way. Thank you 🙏🏻!",
+  bio: "It's not been long since I started walking in the path of AI/ML, so a lot of achievements are on the way. Thank you 🙏🏻!",
   achievements: [
     {
       id: 1,
