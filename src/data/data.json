@@ -1,0 +1,74 @@
+{
+    "name": "Bijaya Acharya",
+    "title": "MSc. Data Analytics",
+    "email": "hallo@achbj.com",
+    "linkedin": "linkedin.com/in/achbj",
+    "github": "github.com/achbj",
+    "about": "' <b>Machine Learning Engineer by day, Iron Man by night—coding the future, armored in innovation.</b> ' </br> With a keen interest in emerging technologies, I aim to be at the forefront of the evolving landscape, using my skills to tackle challenges and create impactful advancements. Eager to collaborate with like-minded professionals, I am committed to being a part of the journey towards a smarter, more efficient future.",
+    "status": "Actively seeking research opportunities.",
+    "education": [{
+            "institution": "Stiftung Universität Hildesheim",
+            "degree": "MSc. Data Analytics",
+            "dates": "2025 - Current",
+            "description": "Focusing on AI/ML Research and Development"
+        },
+        {
+            "institution": "Coventry University",
+            "degree": "BSc. Hons Computing",
+            "dates": "2019 - 2022",
+            "description": "Programming, Database, Networking, Web Development, Software Engineering"
+        }
+    ],
+    "experience": [{
+        "title": "Research Intern",
+        "company": "NAAMII (Nepal Applied Mathematics and Informatics Institute for research)",
+        "dates": "Jun 2024 - Dec 2024",
+        "description": "Worked under the guidance of Dr. Taman Upahadaya. Process in publishing a paper on 'Machine learning models predicting radiation pneumonitis based on a multi-omics and multi-regional approach in patients with lung cancer treated on the NRG/RTOG 0617 clinical trial', Developed Multi-model cross-validation system for predicting the performance of machine learning models with imbalanced data"
+    }],
+    "projects": [{
+            "name": "Brain Tumor MRI Classification",
+            "description": "Used Convolutional Neural Network to classify brain tumors as either malignant or benign",
+            "technologies": ["Python", "TensorFlow", "Keras"],
+            "github": "https://github.com/achbj/machine-learning-portfolio/tree/master/Deep%20Learning/Brain%20Tumor%20MRI%20Classification%20TF"
+        },
+        {
+            "name": "Fake News Detection",
+            "description": "Used multiple machine learning models to detect fake news",
+            "technologies": [
+                "Python",
+                "Logistic Regression",
+                "Random Forest Classifier",
+                "Gradient Boosting Classifier"
+            ],
+            "github": "https://github.com/achbj/fake-news-detection"
+        },
+        {
+            "name": "End-to-End Medallion Architecture Data Pipeline",
+            "description": "Worked in team of two people to develop an end-to-end data pipeline using Medallion Architecture on Aws Databricks. The pipeline ingests raw data , processes it through multiple layers (Bronze, Silver, Gold) to ensure data quality and consistency, and finally makes it available for analysis and reporting. Implemented transformation, and aggregation techniques to optimize performance and reliability.",
+            "technologies": [
+                "Python",
+                "Databricks",
+                "Apache Spark",
+                "Lakeflow",
+                "dbt",
+                "SQL"
+            ],
+            "github": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization"
+        }
+    ],
+    "skills": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn",
+        "Deep Learning",
+        "TensorFlow",
+        "PyTorch",
+        "NLP",
+        "Computer Vision",
+        "Data Analysis",
+        "SQL",
+        "Git",
+        "Communication",
+        "Problem Solving"
+    ]
+}
