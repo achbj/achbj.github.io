@@ -1,74 +1,162 @@
 {
-    "name": "Bijaya Acharya",
-    "title": "MSc. Data Analytics",
-    "email": "hallo@achbj.com",
-    "linkedin": "linkedin.com/in/achbj",
-    "github": "github.com/achbj",
-    "about": "' <b>Machine Learning Engineer by day, Iron Man by night—coding the future, armored in innovation.</b> ' </br> With a keen interest in emerging technologies, I aim to be at the forefront of the evolving landscape, using my skills to tackle challenges and create impactful advancements. Eager to collaborate with like-minded professionals, I am committed to being a part of the journey towards a smarter, more efficient future.",
-    "status": "Actively seeking research opportunities.",
-    "education": [{
-            "institution": "Stiftung Universität Hildesheim",
-            "degree": "MSc. Data Analytics",
-            "dates": "2025 - Current",
-            "description": "Focusing on AI/ML Research and Development"
-        },
-        {
-            "institution": "Coventry University",
-            "degree": "BSc. Hons Computing",
-            "dates": "2019 - 2022",
-            "description": "Programming, Database, Networking, Web Development, Software Engineering"
-        }
-    ],
-    "experience": [{
-        "title": "Research Intern",
-        "company": "NAAMII (Nepal Applied Mathematics and Informatics Institute for research)",
-        "dates": "Jun 2024 - Dec 2024",
-        "description": "Worked under the guidance of Dr. Taman Upahadaya. Process in publishing a paper on 'Machine learning models predicting radiation pneumonitis based on a multi-omics and multi-regional approach in patients with lung cancer treated on the NRG/RTOG 0617 clinical trial', Developed Multi-model cross-validation system for predicting the performance of machine learning models with imbalanced data"
-    }],
-    "projects": [{
-            "name": "Brain Tumor MRI Classification",
-            "description": "Used Convolutional Neural Network to classify brain tumors as either malignant or benign",
-            "technologies": ["Python", "TensorFlow", "Keras"],
-            "github": "https://github.com/achbj/machine-learning-portfolio/tree/master/Deep%20Learning/Brain%20Tumor%20MRI%20Classification%20TF"
-        },
-        {
-            "name": "Fake News Detection",
-            "description": "Used multiple machine learning models to detect fake news",
-            "technologies": [
-                "Python",
-                "Logistic Regression",
-                "Random Forest Classifier",
-                "Gradient Boosting Classifier"
-            ],
-            "github": "https://github.com/achbj/fake-news-detection"
-        },
-        {
-            "name": "End-to-End Medallion Architecture Data Pipeline",
-            "description": "Worked in team of two people to develop an end-to-end data pipeline using Medallion Architecture on Aws Databricks. The pipeline ingests raw data , processes it through multiple layers (Bronze, Silver, Gold) to ensure data quality and consistency, and finally makes it available for analysis and reporting. Implemented transformation, and aggregation techniques to optimize performance and reliability.",
-            "technologies": [
-                "Python",
-                "Databricks",
-                "Apache Spark",
-                "Lakeflow",
-                "dbt",
-                "SQL"
-            ],
-            "github": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization"
-        }
-    ],
-    "skills": [
-        "Python",
-        "Machine Learning",
-        "Scikit-learn",
-        "Deep Learning",
-        "TensorFlow",
-        "PyTorch",
-        "NLP",
-        "Computer Vision",
-        "Data Analysis",
-        "SQL",
-        "Git",
-        "Communication",
-        "Problem Solving"
-    ]
+  "name": "Bijaya Acharya",
+  "title": "ML Engineer · Data Analytics · AI Researcher",
+  "email": "bj.ach7@gmail.com",
+  "linkedin": "linkedin.com/in/achbj",
+  "github": "github.com/achbj",
+  "github2": "github.com/bonzainsights",
+  "location": "Hildesheim, Germany",
+  "availability": "Open to Werkstudent (20h/week) · Full-time during breaks · Blue Card sponsorship welcome",
+
+  "typewriterLines": [
+    "I train language models from scratch.",
+    "60M parameters. Student GPU. Real results.",
+    "Researcher. Engineer. Builder.",
+    "From Kathmandu to Hildesheim — shipping ML.",
+    "Currently: MSc Data Analytics @ Hildesheim."
+  ],
+
+  "about": [
+    "I build ML systems end-to-end — from pretraining transformer architectures on raw corpora to deploying analytics pipelines in production. My research at NAAMII focused on imbalanced clinical cancer data, resulting in a published IEEE paper on radiation pneumonitis prediction using multi-omics approaches.",
+    "On the engineering side, I've shipped ML solutions for real businesses, designed medallion-architecture data pipelines, and automated analytical workflows using LLM-based agents. My flagship project, PIGPT-60M, is a 60-million parameter GPT I designed, trained, and fine-tuned entirely from scratch.",
+    "I'm currently pursuing my MSc in Data Analytics at the University of Hildesheim. Originally from Nepal, now based in Germany — chasing hard problems in AI and building things that actually work."
+  ],
+
+  "status": "Open to Werkstudent & research roles in Germany",
+
+  "education": [
+    {
+      "institution": "University of Hildesheim, Germany",
+      "degree": "MSc Data Analytics",
+      "dates": "Apr 2025 – Present",
+      "description": "Specializing in AI/ML, Data Pipelines, and AI Automation"
+    },
+    {
+      "institution": "Coventry University (Softwarica College), Nepal",
+      "degree": "BSc (Hons) Computing",
+      "dates": "2019 – 2022",
+      "description": "AI, Data Analysis, Distributed Systems, Algorithms, Agile"
+    }
+  ],
+
+  "experience": [
+    {
+      "title": "Research Intern / Assistant",
+      "company": "NAAMII — Nepal Applied Mathematics & Informatics Institute",
+      "dates": "Jun 2024 – Dec 2024",
+      "highlight": "IEEE Early Access paper published",
+      "bullets": [
+        "Analyzed ML/AI trends and developed practical solutions for real-world imbalanced clinical cancer datasets",
+        "Designed ML pipeline workflows supporting research-driven decision making on radiation pneumonitis prediction",
+        "Translated complex model predictions into actionable insights for clinical interpretation",
+        "Co-authored IEEE paper: multi-omics, multi-regional approach on NRG/RTOG 0617 trial data"
+      ]
+    },
+    {
+      "title": "Machine Learning Engineer (Contract)",
+      "company": "Global Tech Nepal Pvt. Ltd.",
+      "dates": "Jan 2023 – Jan 2024",
+      "highlight": "End-to-end ML solutions for SMBs",
+      "bullets": [
+        "Developed and deployed ML/AI solutions focused on real-world business applicability for small businesses",
+        "Collaborated with cross-functional teams to align AI capabilities with project objectives",
+        "Designed scalable analytics and automation concepts for operational processes"
+      ]
+    },
+    {
+      "title": "Data Analytics Intern",
+      "company": "Kush Fintech",
+      "dates": "Aug 2023 – Nov 2023",
+      "highlight": "Agricultural & fintech analytics",
+      "bullets": [
+        "Analyzed operational and agricultural datasets to support data-driven decisions",
+        "Created dashboards and visual reports for non-technical stakeholders",
+        "Developed early-stage predictive analytics use cases for agricultural data flows"
+      ]
+    }
+  ],
+
+  "research": [
+    {
+      "title": "ML Models Predicting Radiation Pneumonitis via Multi-Omics & Multi-Regional Approach",
+      "venue": "IEEE",
+      "status": "Early Access",
+      "year": "2025",
+      "description": "Machine learning models for predicting radiation pneumonitis in lung cancer patients using a multi-omics and multi-regional approach, evaluated on the NRG/RTOG 0617 clinical trial dataset. Tackles severely imbalanced clinical data.",
+      "link": "https://ieeexplore.ieee.org/document/11402923",
+      "tags": ["Clinical ML", "Imbalanced Data", "Multi-Omics", "Cancer Research", "PyTorch"]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "PIGPT-60M",
+      "tagline": "GPT architecture. 60M parameters. Built from scratch.",
+      "description": "Designed and trained a 60-million parameter GPT-style language model end-to-end on Kaggle GPUs. Full pipeline: pretraining on TinyStories corpus, fine-tuned on Alpaca + DailyDialog + GSM8K for instruction following and conversational capability. No pretrained weights — everything from scratch.",
+      "technologies": ["PyTorch", "Transformers", "CUDA", "Distributed Training", "Python"],
+      "highlight": "60M parameters · Trained from scratch · Instruction-tuned",
+      "featured": true,
+      "github": "https://github.com/achbj",
+      "demo": ""
+    },
+    {
+      "name": "AI Agent Workflow Automation",
+      "tagline": "LLM agents automating consultant workflows.",
+      "description": "Designed AI agent workflows using LLM-based tools and n8n to automate analytical and reporting tasks. Integrated Claude API with custom Python tooling to improve consultant productivity through automated data retrieval, summarization, and report generation.",
+      "technologies": ["n8n", "Claude API", "Python", "LLM Tooling", "REST APIs"],
+      "highlight": "Multi-agent orchestration · Production automation",
+      "featured": true,
+      "github": "https://github.com/bonzainsights",
+      "demo": ""
+    },
+    {
+      "name": "End-to-End Medallion Analytics Platform",
+      "tagline": "Bronze → Silver → Gold. Analytics-ready data at scale.",
+      "description": "Multi-layer data pipeline using Medallion Architecture on AWS Databricks. Handles raw ingestion, quality transformation, aggregation, and Power BI reporting. Built with a two-person team.",
+      "technologies": ["Python", "SQL", "Databricks", "Apache Spark", "dbt", "Power BI"],
+      "highlight": "Full medallion architecture · Team project",
+      "featured": false,
+      "github": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization",
+      "demo": ""
+    },
+    {
+      "name": "Brain Tumor MRI Classification",
+      "tagline": "CNN-based malignant vs benign classification.",
+      "description": "Convolutional neural network for classifying brain tumor MRI scans as malignant or benign. Deep learning applied to medical imaging with real clinical relevance.",
+      "technologies": ["Python", "TensorFlow", "Keras", "CNN", "Medical Imaging"],
+      "highlight": "Medical imaging · Deep learning",
+      "featured": false,
+      "github": "https://github.com/achbj/machine-learning-portfolio",
+      "demo": ""
+    }
+  ],
+
+  "skills": [
+    {
+      "group": "AI / ML",
+      "items": ["Python", "PyTorch", "TensorFlow", "Transformers", "LLMs", "Fine-tuning", "Scikit-learn", "CUDA"]
+    },
+    {
+      "group": "Data",
+      "items": ["SQL", "DuckDB", "Pandas", "NumPy", "Data Pipelines", "Apache Spark", "dbt"]
+    },
+    {
+      "group": "Automation & Agents",
+      "items": ["n8n", "AI Agents", "Claude API", "Workflow Automation", "REST APIs"]
+    },
+    {
+      "group": "Visualization",
+      "items": ["Power BI", "Tableau", "Dashboard Dev"]
+    },
+    {
+      "group": "Engineering",
+      "items": ["Django", "React", "Git", "Docker", "GitHub Actions"]
+    }
+  ],
+
+  "contact": {
+    "cta": "Open to Werkstudent roles, research collaborations, and full-time positions in Germany. Let's build something.",
+    "email": "bj.ach7@gmail.com",
+    "availability": "Immediate · 20h/week during semester · Full-time during breaks"
+  }
 }

@@ -1,118 +1,102 @@
-.about {
-  min-height: 100vh;
-}
+.about { padding: 90px 20px; }
 
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   align-items: start;
 }
 
 .about-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-text p {
+  font-size: 0.95rem;
   color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.about-text p b, .about-text p strong {
+  color: var(--text-primary);
 }
 
 .download-cv-btn {
-  margin-top: 30px;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 5px 15px var(--shadow);
-  transition: all 0.3s ease;
+  gap: 8px;
+  padding: 11px 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: fit-content;
+  margin-top: 6px;
+  font-family: 'Inter', sans-serif;
 }
 
 .download-cv-btn:hover {
-  box-shadow: 0 8px 25px var(--glow);
-  transform: translateY(-2px);
+  border-color: var(--primary);
+  color: var(--primary);
+  box-shadow: 0 0 16px var(--shadow);
 }
 
 .subsection-title {
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
   color: var(--primary);
+  margin-bottom: 18px;
+  font-weight: 600;
 }
 
 .education-card {
-  background: var(--bg-secondary);
-  padding: 25px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  margin-bottom: 20px;
-  border-left: 4px solid var(--primary);
-  box-shadow: 0 4px 15px var(--shadow);
-  transition: all 0.3s ease;
+  padding: 20px;
+  margin-bottom: 14px;
+  transition: all 0.25s ease;
+}
+
+.education-card:hover {
+  border-color: var(--border-hover);
 }
 
 .edu-degree {
-  font-size: 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  font-family: 'Inter', sans-serif;
 }
 
 .edu-institution {
-  color: var(--secondary);
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 0.85rem;
+  color: var(--primary);
   font-weight: 500;
+  margin-bottom: 3px;
 }
 
 .edu-dates {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 6px;
 }
 
 .edu-description {
-  color: var(--text-secondary);
+  font-size: 0.82rem;
+  color: var(--text-muted);
   line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-  .about {
-    padding: 60px 20px;
-  }
-
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .about-text {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .download-cv-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .education-card {
-    padding: 20px;
-  }
-
-  .edu-degree {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-text {
-    font-size: 0.95rem;
-  }
-
-  .subsection-title {
-    font-size: 1.5rem;
-  }
+  .about-content { grid-template-columns: 1fr; gap: 36px; }
 }

@@ -5,174 +5,137 @@ import jsPDF from 'jspdf';
 import './About.css';
 
 const About = ({ data }) => {
-  const generatePDF = async () => {
+  const generatePDF = () => {
     const pdf = new jsPDF('p', 'mm', 'a4');
     const pageWidth = pdf.internal.pageSize.getWidth();
-    const pageHeight = pdf.internal.pageSize.getHeight();
     const margin = 20;
-    let yPosition = margin;
+    let y = margin;
 
     // Header
-    pdf.setFillColor(139, 0, 0);
-    pdf.rect(0, 0, pageWidth, 40, 'F');
+    pdf.setFillColor(0, 102, 204);
+    pdf.rect(0, 0, pageWidth, 38, 'F');
     pdf.setTextColor(255, 255, 255);
-    pdf.setFontSize(24);
-    pdf.setFont('helvetica', 'bold');
-    pdf.text(data.name, margin, 20);
-    pdf.setFontSize(14);
-    pdf.text(data.title, margin, 30);
+    pdf.setFontSize(22); pdf.setFont('helvetica', 'bold');
+    pdf.text(data.name, margin, 18);
+    pdf.setFontSize(11); pdf.setFont('helvetica', 'normal');
+    pdf.text(data.title, margin, 28);
+    y = 48;
 
-    yPosition = 50;
     pdf.setTextColor(0, 0, 0);
+    pdf.setFontSize(9);
+    pdf.text(`${data.email} | ${data.github} | ${data.linkedin}`, margin, y);
+    pdf.text(data.location, margin, y + 5);
+    y += 14;
 
-    // Contact
-    pdf.setFontSize(10);
-    pdf.text(`Email: ${data.email}`, margin, yPosition);
-    yPosition += 6;
-    pdf.text(`GitHub: ${data.github}`, margin, yPosition);
-    yPosition += 6;
-    pdf.text(`LinkedIn: ${data.linkedin}`, margin, yPosition);
-    yPosition += 12;
+    const section = (title) => {
+      pdf.setFontSize(13); pdf.setFont('helvetica', 'bold');
+      pdf.setTextColor(0, 102, 204);
+      pdf.text(title, margin, y); y += 7;
+      pdf.setDrawColor(0, 102, 204); pdf.setLineWidth(0.3);
+      pdf.line(margin, y, pageWidth - margin, y); y += 5;
+      pdf.setTextColor(0, 0, 0);
+      pdf.setFont('helvetica', 'normal'); pdf.setFontSize(9);
+    };
 
     // About
-    pdf.setFontSize(16);
-    pdf.setFont('helvetica', 'bold');
-    pdf.setTextColor(139, 0, 0);
-    pdf.text('ABOUT', margin, yPosition);
-    yPosition += 8;
-    pdf.setFontSize(10);
-    pdf.setFont('helvetica', 'normal');
-    pdf.setTextColor(0, 0, 0);
-    const aboutText = data.about.replace(/<[^>]*>/g, '');
-    const aboutLines = pdf.splitTextToSize(aboutText, pageWidth - 2 * margin);
-    pdf.text(aboutLines, margin, yPosition);
-    yPosition += aboutLines.length * 5 + 8;
+    section('ABOUT');
+    const aboutParagraphs = Array.isArray(data.about) ? data.about : [data.about];
+    aboutParagraphs.forEach(p => {
+      const lines = pdf.splitTextToSize(p.replace(/<[^>]*>/g, ''), pageWidth - 2 * margin);
+      pdf.text(lines, margin, y); y += lines.length * 4.5 + 4;
+    });
+    y += 4;
 
     // Education
-    pdf.setFontSize(16);
-    pdf.setFont('helvetica', 'bold');
-    pdf.setTextColor(139, 0, 0);
-    pdf.text('EDUCATION', margin, yPosition);
-    yPosition += 8;
-    pdf.setFontSize(10);
-    pdf.setFont('helvetica', 'normal');
-    pdf.setTextColor(0, 0, 0);
-    
+    section('EDUCATION');
     data.education.forEach(edu => {
-      if (yPosition > pageHeight - 40) {
-        pdf.addPage();
-        yPosition = margin;
-      }
-      pdf.setFont('helvetica', 'bold');
-      pdf.text(edu.degree, margin, yPosition);
-      yPosition += 5;
-      pdf.setFont('helvetica', 'normal');
-      pdf.text(`${edu.institution} | ${edu.dates}`, margin, yPosition);
-      yPosition += 5;
-      pdf.text(edu.description, margin, yPosition);
-      yPosition += 10;
+      pdf.setFont('helvetica', 'bold'); pdf.setFontSize(10);
+      pdf.text(edu.degree, margin, y); y += 5;
+      pdf.setFont('helvetica', 'normal'); pdf.setFontSize(9);
+      pdf.text(`${edu.institution} | ${edu.dates}`, margin, y); y += 4;
+      pdf.text(edu.description, margin, y); y += 8;
     });
 
     // Experience
-    if (data.experience && data.experience.length > 0) {
-      yPosition += 5;
-      if (yPosition > pageHeight - 60) {
-        pdf.addPage();
-        yPosition = margin;
+    section('EXPERIENCE');
+    data.experience.forEach(exp => {
+      pdf.setFont('helvetica', 'bold'); pdf.setFontSize(10);
+      pdf.text(exp.title, margin, y); y += 5;
+      pdf.setFont('helvetica', 'normal'); pdf.setFontSize(9);
+      pdf.text(`${exp.company} | ${exp.dates}`, margin, y); y += 4;
+      if (exp.bullets) {
+        exp.bullets.forEach(b => {
+          const lines = pdf.splitTextToSize(`• ${b}`, pageWidth - 2 * margin - 4);
+          pdf.text(lines, margin + 4, y); y += lines.length * 4.5;
+        });
       }
-      pdf.setFontSize(16);
-      pdf.setFont('helvetica', 'bold');
-      pdf.setTextColor(139, 0, 0);
-      pdf.text('EXPERIENCE', margin, yPosition);
-      yPosition += 8;
-      pdf.setFontSize(10);
-      pdf.setFont('helvetica', 'normal');
-      pdf.setTextColor(0, 0, 0);
-      
-      data.experience.forEach(exp => {
-        if (yPosition > pageHeight - 40) {
-          pdf.addPage();
-          yPosition = margin;
-        }
-        pdf.setFont('helvetica', 'bold');
-        pdf.text(exp.title, margin, yPosition);
-        yPosition += 5;
+      y += 5;
+    });
+
+    // Skills
+    section('SKILLS');
+    if (data.skills.length > 0 && typeof data.skills[0] === 'object') {
+      data.skills.forEach(group => {
+        pdf.setFont('helvetica', 'bold'); pdf.setFontSize(9);
+        pdf.text(`${group.group}: `, margin, y);
         pdf.setFont('helvetica', 'normal');
-        pdf.text(`${exp.company} | ${exp.dates}`, margin, yPosition);
-        yPosition += 5;
-        const descLines = pdf.splitTextToSize(exp.description, pageWidth - 2 * margin);
-        pdf.text(descLines, margin, yPosition);
-        yPosition += descLines.length * 5 + 8;
+        const txt = pdf.splitTextToSize(group.items.join(' · '), pageWidth - 2 * margin - 30);
+        pdf.text(txt, margin + 28, y); y += txt.length * 4.5 + 3;
       });
     }
 
-    // Skills
-    yPosition += 5;
-    if (yPosition > pageHeight - 40) {
-      pdf.addPage();
-      yPosition = margin;
-    }
-    pdf.setFontSize(16);
-    pdf.setFont('helvetica', 'bold');
-    pdf.setTextColor(139, 0, 0);
-    pdf.text('SKILLS', margin, yPosition);
-    yPosition += 8;
-    pdf.setFontSize(10);
-    pdf.setFont('helvetica', 'normal');
-    pdf.setTextColor(0, 0, 0);
-    const skillsText = data.skills.join(' • ');
-    const skillsLines = pdf.splitTextToSize(skillsText, pageWidth - 2 * margin);
-    pdf.text(skillsLines, margin, yPosition);
-
-    pdf.save(`${data.name.replace(/\s+/g, '_')}_CV.pdf`);
+    pdf.save(`Bijaya_Acharya_CV.pdf`);
   };
+
+  const paragraphs = Array.isArray(data.about) ? data.about : [data.about];
 
   return (
     <section className="about" id="about">
-      <div className="hexagon-pattern"></div>
       <motion.h2
         className="section-title"
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        About Me
+        About
       </motion.h2>
 
       <div className="about-content">
         <motion.div
           className="about-text"
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <div dangerouslySetInnerHTML={{ __html: data.about }} />
-          
+          {paragraphs.map((p, i) => (
+            <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
+          ))}
+
           <motion.button
             className="download-cv-btn"
             onClick={generatePDF}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
           >
-            <FiDownload /> Download CV
+            <FiDownload size={15} /> Download CV
           </motion.button>
         </motion.div>
 
         <motion.div
           className="education-section"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
         >
           <h3 className="subsection-title">Education</h3>
           {data.education.map((edu, index) => (
             <motion.div
               key={index}
               className="education-card"
-              whileHover={{ scale: 1.02, boxShadow: '0 8px 30px var(--glow)' }}
+              whileHover={{ y: -3, boxShadow: '0 8px 30px var(--shadow)' }}
             >
               <h4 className="edu-degree">{edu.degree}</h4>
               <p className="edu-institution">{edu.institution}</p>

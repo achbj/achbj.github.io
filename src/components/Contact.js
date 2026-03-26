@@ -1,182 +1,134 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiUser, FiMessageSquare, FiSend } from 'react-icons/fi';
-import emailjs from '@emailjs/browser';
+import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiClock } from 'react-icons/fi';
 import './Contact.css';
 
 const Contact = ({ data }) => {
-  const formRef = useRef();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [status, setStatus] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus('');
-
-    try {
-      // Initialize EmailJS with your public key
-      // You'll need to replace these with your actual EmailJS credentials
-      // Sign up at https://www.emailjs.com/
-      const result = await emailjs.sendForm(
-        'YOUR_SERVICE_ID',  // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        formRef.current,
-        'YOUR_PUBLIC_KEY'   // Replace with your EmailJS public key
-      );
-
-      if (result.text === 'OK') {
-        setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
-      }
-    } catch (error) {
-      console.error('EmailJS Error:', error);
-      setStatus('error');
-    }
-
-    setLoading(false);
-    setTimeout(() => setStatus(''), 5000);
-  };
-
   return (
     <section className="contact" id="contact">
-      <div className="hexagon-pattern"></div>
       <motion.h2
         className="section-title"
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        Get In Touch
+        Contact
       </motion.h2>
 
-      <div className="contact-content">
+      <div className="contact-wrapper">
         <motion.div
-          className="contact-info"
-          initial={{ opacity: 0, x: -50 }}
+          className="contact-left"
+          initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h3 className="contact-subtitle">Let's Connect</h3>
-          <p className="contact-description">
-            I'm always interested in hearing about new opportunities, collaborations, 
-            or just a friendly chat about technology and innovation.
-          </p>
-          <div className="contact-details">
-            <div className="contact-item">
-              <FiMail className="contact-icon" />
-              <a href={`mailto:${data.email}`}>{data.email}</a>
+          <p className="contact-cta">{data.contact?.cta || 'Let\'s work together.'}</p>
+
+          <div className="contact-info">
+            <div className="contact-info-item">
+              <FiMapPin size={14} />
+              <span>{data.location}</span>
             </div>
+            <div className="contact-info-item">
+              <FiClock size={14} />
+              <span>{data.contact?.availability || data.availability}</span>
+            </div>
+          </div>
+
+          <div className="contact-links">
+            <motion.a
+              href={`mailto:${data.contact?.email || data.email}`}
+              className="contact-link primary-link"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <FiMail />
+              {data.contact?.email || data.email}
+            </motion.a>
+
+            <motion.a
+              href={`https://${data.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+              whileHover={{ x: 4 }}
+            >
+              <FiLinkedin />
+              LinkedIn — {data.linkedin}
+            </motion.a>
+
+            <motion.a
+              href={`https://${data.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+              whileHover={{ x: 4 }}
+            >
+              <FiGithub />
+              {data.github}
+            </motion.a>
+
+            {data.github2 && (
+              <motion.a
+                href={`https://${data.github2}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+                whileHover={{ x: 4 }}
+              >
+                <FiGithub />
+                {data.github2}
+              </motion.a>
+            )}
           </div>
         </motion.div>
 
         <motion.div
-          className="contact-form-container"
-          initial={{ opacity: 0, x: 50 }}
+          className="contact-right"
+          initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
-            <div className="form-group">
-              <label htmlFor="name">
-                <FiUser /> Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                placeholder="Your name"
-              />
+          <div className="contact-card">
+            <div className="contact-card-header mono">
+              <span className="card-dot dot-red"></span>
+              <span className="card-dot dot-yellow"></span>
+              <span className="card-dot dot-green"></span>
+              <span className="card-label">quick_intro.py</span>
             </div>
+            <pre className="contact-code">{`# Bijaya Acharya
+# ML Engineer · AI Researcher
 
-            <div className="form-group">
-              <label htmlFor="email">
-                <FiMail /> Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                placeholder="your.email@example.com"
-              />
-            </div>
+profile = {
+  "name": "${data.name}",
+  "role": "MSc Data Analytics",
+  "location": "${data.location}",
+  "languages": ["Python", "SQL", "German(A2)"],
+  "seeking": "Werkstudent / Research roles",
+  "ieee_paper": True,
+  "gpt_from_scratch": True,  # PIGPT-60M
+}
 
-            <div className="form-group">
-              <label htmlFor="message">
-                <FiMessageSquare /> Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows="6"
-                placeholder="Your message..."
-              />
-            </div>
-
-            <motion.button
-              type="submit"
-              className="submit-btn"
-              disabled={loading}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {loading ? 'Sending...' : (
-                <>
-                  <FiSend /> Send Message
-                </>
-              )}
-            </motion.button>
-
-            {status === 'success' && (
-              <motion.p
-                className="status-message success"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-              >
-                Message sent successfully! I'll get back to you soon.
-              </motion.p>
-            )}
-
-            {status === 'error' && (
-              <motion.p
-                className="status-message error"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-              >
-                Failed to send message. Please try again or email directly.
-              </motion.p>
-            )}
-          </form>
+# Let's connect →
+email = "${data.contact?.email || data.email}"`}
+            </pre>
+          </div>
         </motion.div>
       </div>
 
-      <footer className="footer">
-        <p>© 2025 {data.name}. Built with React & Iron Man inspiration.</p>
-      </footer>
+      <div className="contact-footer">
+        <p className="footer-text mono">
+          Built with React · Deployed on GitHub Pages · {new Date().getFullYear()}
+        </p>
+        <p className="footer-text mono">
+          <a href="/llms.txt" className="footer-link">llms.txt</a>
+          {' · '}
+          <a href="/ai.json" className="footer-link">ai.json</a>
+        </p>
+      </div>
     </section>
   );
 };

@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Research from './components/Research';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import NeuralBackground from './components/NeuralBackground';
@@ -18,9 +19,7 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
 
   return (
     <div className="App">
@@ -29,9 +28,10 @@ function App() {
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <Hero data={data} />
       <About data={data} />
-      <Skills data={data} />
       <Experience data={data} />
+      <Research data={data} />
       <Projects data={data} />
+      <Skills data={data} />
       <Contact data={data} />
     </div>
   );

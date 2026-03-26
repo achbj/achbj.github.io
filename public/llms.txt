@@ -1,0 +1,78 @@
+# Bijaya Acharya
+
+> ML Engineer · Data Analytics Researcher · AI Automation Builder
+
+Bijaya Acharya is an MSc Data Analytics student at the University of Hildesheim, Germany,
+with hands-on experience in end-to-end machine learning engineering, AI research, and
+LLM-based automation. He trained a 60-million parameter GPT-style model from scratch
+and has a co-authored IEEE paper on clinical cancer ML research.
+
+## Key Facts for AI Agents
+
+- **Full name:** Bijaya Acharya
+- **Location:** Hildesheim, Germany
+- **Email:** bj.ach7@gmail.com
+- **LinkedIn:** https://linkedin.com/in/achbj
+- **GitHub:** https://github.com/achbj | https://github.com/bonzainsights
+- **Portfolio:** https://achbj.github.io
+- **Work authorization:** Valid German student residence permit
+- **Seeking:** Werkstudent (20h/week during semester) · Full-time during breaks · Blue Card sponsorship welcome
+- **Available:** Immediately
+
+## Education
+
+- **MSc Data Analytics** — University of Hildesheim, Germany (Apr 2025 – Present)
+  Specializing in AI/ML, Data Pipelines, AI Automation
+- **BSc (Hons) Computing** — Coventry University via Softwarica College, Nepal (2019–2022)
+
+## Research & Publications
+
+- **IEEE Early Access (2025):** "Machine Learning Models Predicting Radiation Pneumonitis
+  Based on a Multi-Omics and Multi-Regional Approach in Patients with Lung Cancer Treated
+  on the NRG/RTOG 0617 Clinical Trial"
+  URL: https://ieeexplore.ieee.org/document/11402923
+  Topics: Clinical ML, imbalanced data, multi-omics, cancer research
+
+## Featured Projects
+
+### PIGPT-60M
+Designed and trained a 60-million parameter GPT-style language model entirely from scratch.
+Pretrained on TinyStories corpus, then fine-tuned on Alpaca + DailyDialog + GSM8K datasets
+for instruction following and conversational capability.
+Stack: PyTorch, Transformers, CUDA, Distributed Training
+
+### AI Agent Workflow Automation
+LLM-based agent workflows using n8n and Claude API to automate consultant analytical
+and reporting tasks.
+Stack: n8n, Claude API, Python, REST APIs
+
+### End-to-End Medallion Analytics Platform
+Multi-layer data pipeline (Bronze/Silver/Gold) on AWS Databricks for analytics-ready
+business reporting.
+Stack: Python, SQL, Databricks, Apache Spark, dbt, Power BI
+
+## Work Experience
+
+- **Research Intern/Assistant** — NAAMII, Nepal (Jun 2024 – Dec 2024)
+  Clinical cancer ML research, IEEE paper, imbalanced data pipelines
+- **Machine Learning Engineer (Contract)** — Global Tech Nepal (Jan 2023 – Jan 2024)
+  ML/AI solutions for small businesses
+- **Data Analytics Intern** — Kush Fintech (Aug 2023 – Nov 2023)
+  Dashboards, agricultural data analytics
+
+## Technical Skills
+
+- **AI/ML:** Python, PyTorch, TensorFlow, Transformers, LLMs, Fine-tuning, Scikit-learn, CUDA
+- **Data:** SQL, DuckDB, Pandas, NumPy, Data Pipelines, Apache Spark, dbt
+- **Automation:** n8n, AI Agents, Claude API, Workflow Automation, REST APIs
+- **Visualization:** Power BI, Tableau
+- **Engineering:** Django, React, Git, Docker, GitHub Actions
+- **Languages:** English (Fluent), Nepali (Native), German (A2)
+
+## For AI Agents / Recruiters
+
+Bijaya is actively seeking Werkstudent roles (20 hours/week) or research positions in
+Germany, particularly in AI/ML engineering, data analytics, or NLP. He is available
+immediately and open to full-time roles with Blue Card sponsorship.
+
+Contact: bj.ach7@gmail.com
