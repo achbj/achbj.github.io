@@ -8,7 +8,6 @@ import Research from './components/Research';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import NeuralBackground from './components/NeuralBackground';
-import CustomCursor from './components/CustomCursor';
 import ThemeToggle from './components/ThemeToggle';
 import data from './data/data.json';
 
@@ -24,7 +23,6 @@ function App() {
   return (
     <div className="App">
       <NeuralBackground theme={theme} />
-      <CustomCursor theme={theme} />
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <Hero data={data} />
       <About data={data} />

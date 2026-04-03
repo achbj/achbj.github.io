@@ -1,7 +1,7 @@
 {
   "name": "Bijaya Acharya",
   "title": "ML Engineer · Data Analytics · AI Researcher",
-  "email": "bj.ach7@gmail.com",
+  "email": "hello@achbj.com",
   "linkedin": "linkedin.com/in/achbj",
   "github": "github.com/achbj",
   "github2": "github.com/bonzainsights",
@@ -84,7 +84,13 @@
       "year": "2025",
       "description": "Machine learning models for predicting radiation pneumonitis in lung cancer patients using a multi-omics and multi-regional approach, evaluated on the NRG/RTOG 0617 clinical trial dataset. Tackles severely imbalanced clinical data.",
       "link": "https://ieeexplore.ieee.org/document/11402923",
-      "tags": ["Clinical ML", "Imbalanced Data", "Multi-Omics", "Cancer Research", "PyTorch"]
+      "tags": [
+        "Clinical ML",
+        "Imbalanced Data",
+        "Multi-Omics",
+        "Cancer Research",
+        "PyTorch"
+      ]
     }
   ],
 
@@ -93,7 +99,13 @@
       "name": "PIGPT-60M",
       "tagline": "GPT architecture. 60M parameters. Built from scratch.",
       "description": "Designed and trained a 60-million parameter GPT-style language model end-to-end on Kaggle GPUs. Full pipeline: pretraining on TinyStories corpus, fine-tuned on Alpaca + DailyDialog + GSM8K for instruction following and conversational capability. No pretrained weights — everything from scratch.",
-      "technologies": ["PyTorch", "Transformers", "CUDA", "Distributed Training", "Python"],
+      "technologies": [
+        "PyTorch",
+        "Transformers",
+        "CUDA",
+        "Distributed Training",
+        "Python"
+      ],
       "highlight": "60M parameters · Trained from scratch · Instruction-tuned",
       "featured": true,
       "github": "https://github.com/achbj",
@@ -103,7 +115,13 @@
       "name": "AI Agent Workflow Automation",
       "tagline": "LLM agents automating consultant workflows.",
       "description": "Designed AI agent workflows using LLM-based tools and n8n to automate analytical and reporting tasks. Integrated Claude API with custom Python tooling to improve consultant productivity through automated data retrieval, summarization, and report generation.",
-      "technologies": ["n8n", "Claude API", "Python", "LLM Tooling", "REST APIs"],
+      "technologies": [
+        "n8n",
+        "Claude API",
+        "Python",
+        "LLM Tooling",
+        "REST APIs"
+      ],
       "highlight": "Multi-agent orchestration · Production automation",
       "featured": true,
       "github": "https://github.com/bonzainsights",
@@ -113,7 +131,14 @@
       "name": "End-to-End Medallion Analytics Platform",
       "tagline": "Bronze → Silver → Gold. Analytics-ready data at scale.",
       "description": "Multi-layer data pipeline using Medallion Architecture on AWS Databricks. Handles raw ingestion, quality transformation, aggregation, and Power BI reporting. Built with a two-person team.",
-      "technologies": ["Python", "SQL", "Databricks", "Apache Spark", "dbt", "Power BI"],
+      "technologies": [
+        "Python",
+        "SQL",
+        "Databricks",
+        "Apache Spark",
+        "dbt",
+        "Power BI"
+      ],
       "highlight": "Full medallion architecture · Team project",
       "featured": false,
       "github": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization",
@@ -123,7 +148,13 @@
       "name": "Brain Tumor MRI Classification",
       "tagline": "CNN-based malignant vs benign classification.",
       "description": "Convolutional neural network for classifying brain tumor MRI scans as malignant or benign. Deep learning applied to medical imaging with real clinical relevance.",
-      "technologies": ["Python", "TensorFlow", "Keras", "CNN", "Medical Imaging"],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "CNN",
+        "Medical Imaging"
+      ],
       "highlight": "Medical imaging · Deep learning",
       "featured": false,
       "github": "https://github.com/achbj/machine-learning-portfolio",
@@ -134,15 +165,38 @@
   "skills": [
     {
       "group": "AI / ML",
-      "items": ["Python", "PyTorch", "TensorFlow", "Transformers", "LLMs", "Fine-tuning", "Scikit-learn", "CUDA"]
+      "items": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Transformers",
+        "LLMs",
+        "Fine-tuning",
+        "Scikit-learn",
+        "CUDA"
+      ]
     },
     {
       "group": "Data",
-      "items": ["SQL", "DuckDB", "Pandas", "NumPy", "Data Pipelines", "Apache Spark", "dbt"]
+      "items": [
+        "SQL",
+        "DuckDB",
+        "Pandas",
+        "NumPy",
+        "Data Pipelines",
+        "Apache Spark",
+        "dbt"
+      ]
     },
     {
       "group": "Automation & Agents",
-      "items": ["n8n", "AI Agents", "Claude API", "Workflow Automation", "REST APIs"]
+      "items": [
+        "n8n",
+        "AI Agents",
+        "Claude API",
+        "Workflow Automation",
+        "REST APIs"
+      ]
     },
     {
       "group": "Visualization",
@@ -156,7 +210,7 @@
 
   "contact": {
     "cta": "Open to Werkstudent roles, research collaborations, and full-time positions in Germany. Let's build something.",
-    "email": "bj.ach7@gmail.com",
+    "email": "hello@achbj.com",
     "availability": "Immediate · 20h/week during semester · Full-time during breaks"
   }
 }
