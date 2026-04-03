@@ -3,7 +3,7 @@
   "generated": "2026-03-26",
   "person": {
     "name": "Bijaya Acharya",
-    "email": "bj.ach7@gmail.com",
+    "email": "hello@achbj.com",
     "location": "Hildesheim, Germany",
     "nationality": "Nepali",
     "languages": [
@@ -52,7 +52,13 @@
       "status": "Early Access",
       "year": 2025,
       "url": "https://ieeexplore.ieee.org/document/11402923",
-      "topics": ["clinical ML", "imbalanced data", "multi-omics", "cancer", "radiation pneumonitis"]
+      "topics": [
+        "clinical ML",
+        "imbalanced data",
+        "multi-omics",
+        "cancer",
+        "radiation pneumonitis"
+      ]
     }
   ],
   "experience": [
@@ -63,7 +69,11 @@
       "start": "2024-06",
       "end": "2024-12",
       "type": "internship",
-      "highlights": ["IEEE paper co-author", "clinical cancer ML", "imbalanced data"]
+      "highlights": [
+        "IEEE paper co-author",
+        "clinical cancer ML",
+        "imbalanced data"
+      ]
     },
     {
       "title": "Machine Learning Engineer",
@@ -98,19 +108,35 @@
     {
       "name": "Medallion Analytics Platform",
       "description": "End-to-end Bronze/Silver/Gold data pipeline on AWS Databricks",
-      "stack": ["Python", "SQL", "Databricks", "Apache Spark", "dbt", "Power BI"],
+      "stack": [
+        "Python",
+        "SQL",
+        "Databricks",
+        "Apache Spark",
+        "dbt",
+        "Power BI"
+      ],
       "featured": false
     }
   ],
   "skills": {
-    "ai_ml": ["Python", "PyTorch", "TensorFlow", "Transformers", "LLMs", "Fine-tuning", "Scikit-learn", "CUDA"],
+    "ai_ml": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "Transformers",
+      "LLMs",
+      "Fine-tuning",
+      "Scikit-learn",
+      "CUDA"
+    ],
     "data": ["SQL", "DuckDB", "Pandas", "NumPy", "Apache Spark", "dbt"],
     "automation": ["n8n", "AI Agents", "Claude API", "REST APIs"],
     "visualization": ["Power BI", "Tableau"],
     "engineering": ["Django", "React", "Git", "Docker"]
   },
   "contact": {
-    "email": "bj.ach7@gmail.com",
+    "email": "hello@achbj.com",
     "preferred": "email"
   }
 }
