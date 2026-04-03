@@ -10,14 +10,14 @@
 
   "typewriterLines": [
     "I train language models from scratch.",
-    "60M parameters. Student GPU. Real results.",
+    "256M parameters. Lightening.ai's GPU. Real results.",
     "Researcher. Engineer. Builder.",
     "From Kathmandu to Hildesheim — shipping ML.",
     "Currently: MSc Data Analytics @ Hildesheim."
   ],
 
   "about": [
-    "I build ML systems end-to-end — from pretraining transformer architectures on raw corpora to deploying analytics pipelines in production. My research at NAAMII focused on imbalanced clinical cancer data, resulting in a published IEEE paper on radiation pneumonitis prediction using multi-omics approaches.",
+    "I build ML/AI & Data Analytics systems end-to-end —> from pretraining transformer architectures on raw corpora to deploying analytics pipelines in production. My research at NAAMII focused on imbalanced clinical cancer data, resulting in a published IEEE paper on radiation pneumonitis prediction using multi-omics approaches.",
     "On the engineering side, I've shipped ML solutions for real businesses, designed medallion-architecture data pipelines, and automated analytical workflows using LLM-based agents. My flagship project, PIGPT-60M, is a 60-million parameter GPT I designed, trained, and fine-tuned entirely from scratch.",
     "I'm currently pursuing my MSc in Data Analytics at the University of Hildesheim. Originally from Nepal, now based in Germany — chasing hard problems in AI and building things that actually work."
   ],
@@ -96,6 +96,22 @@
 
   "projects": [
     {
+      "name": "NovaMind-256M",
+      "tagline": "Architecture -> Mixture of Top Open Source Models. 256M parameters. Built from scratch.",
+      "description": "Designed and trained a 256million parameter language model from scratch. ",
+      "technologies": [
+        "PyTorch",
+        "Transformers",
+        "CUDA",
+        "Distributed Training",
+        "Python"
+      ],
+      "highlight": "256M parameters · Trained from scratch · Instruction-tuned",
+      "featured": true,
+      "github": "https://github.com/achbj/novamind-256m",
+      "demo": "https://huggingface.co/NewToTheTown/novamind-256m"
+    },
+    {
       "name": "PIGPT-60M",
       "tagline": "GPT architecture. 60M parameters. Built from scratch.",
       "description": "Designed and trained a 60-million parameter GPT-style language model end-to-end on Kaggle GPUs. Full pipeline: pretraining on TinyStories corpus, fine-tuned on Alpaca + DailyDialog + GSM8K for instruction following and conversational capability. No pretrained weights — everything from scratch.",
@@ -108,7 +124,7 @@
       ],
       "highlight": "60M parameters · Trained from scratch · Instruction-tuned",
       "featured": true,
-      "github": "https://github.com/achbj",
+      "github": "https://github.com/achbj/Small-LLM-with-60M-Paramaters-Train-in-Kaggle",
       "demo": ""
     },
     {
@@ -124,7 +140,7 @@
       ],
       "highlight": "Multi-agent orchestration · Production automation",
       "featured": true,
-      "github": "https://github.com/bonzainsights",
+      "github": "https://github.com/bonzainsights/mragent",
       "demo": ""
     },
     {

@@ -11,7 +11,7 @@ and has a co-authored IEEE paper on clinical cancer ML research.
 
 - **Full name:** Bijaya Acharya
 - **Location:** Hildesheim, Germany
-- **Email:** bj.ach7@gmail.com
+- **Email:** hello@gmail.com
 - **LinkedIn:** https://linkedin.com/in/achbj
 - **GitHub:** https://github.com/achbj | https://github.com/bonzainsights
 - **Portfolio:** https://achbj.github.io
@@ -35,10 +35,9 @@ and has a co-authored IEEE paper on clinical cancer ML research.
 
 ## Featured Projects
 
-### PIGPT-60M
-Designed and trained a 60-million parameter GPT-style language model entirely from scratch.
-Pretrained on TinyStories corpus, then fine-tuned on Alpaca + DailyDialog + GSM8K datasets
-for instruction following and conversational capability.
+### NovaMind 256M - PIGPT 60M
+Designed and trained a 256 million which is mixed architecture from top open source LLMs, which are openly available out there.
+PiGPT 60M is a 60 million parameter GPT-style language model trained from scratch just following basic transformers architecture but with RoPE for encoding.
 Stack: PyTorch, Transformers, CUDA, Distributed Training
 
 ### AI Agent Workflow Automation
@@ -75,4 +74,4 @@ Bijaya is actively seeking Werkstudent roles (20 hours/week) or research positio
 Germany, particularly in AI/ML engineering, data analytics, or NLP. He is available
 immediately and open to full-time roles with Blue Card sponsorship.
 
-Contact: bj.ach7@gmail.com
+Contact: hello@achbj.com
