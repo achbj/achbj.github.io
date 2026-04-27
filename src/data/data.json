@@ -10,7 +10,7 @@
 
   "typewriterLines": [
     "I train language models from scratch.",
-    "256M parameters. Lightening.ai's GPU. Real results.",
+    "256M parameters. Lightning.ai's GPU. Real results.",
     "Researcher. Engineer. Builder.",
     "From Kathmandu to Hildesheim — shipping ML.",
     "Currently: MSc Data Analytics @ Hildesheim."
@@ -97,14 +97,13 @@
   "projects": [
     {
       "name": "NovaMind-256M",
-      "tagline": "Architecture -> Mixture of Top Open Source Models. 256M parameters. Built from scratch.",
-      "description": "Designed and trained a 256million parameter language model from scratch. ",
+      "tagline": "Conversational AI Model from Scratch",
+      "description": "Designed and trained a 256 million parameter model with mixed architecture from top open source language models on Lightning.ai's H100 GPU. Implemented full training pipeline: pre-training on FineWeb-Edu + TinyStories, fine-tuning on Alpaca + DailyDialog + ShareGPT for instruction following, and OpenHermes-2.5 + GSM8K for CoT.",
       "technologies": [
         "PyTorch",
         "Transformers",
         "CUDA",
-        "Distributed Training",
-        "Python"
+        "Distributed Training"
       ],
       "highlight": "256M parameters · Trained from scratch · Instruction-tuned",
       "featured": true,
@@ -112,20 +111,30 @@
       "demo": "https://huggingface.co/NewToTheTown/novamind-256m"
     },
     {
-      "name": "PIGPT-60M",
-      "tagline": "GPT architecture. 60M parameters. Built from scratch.",
-      "description": "Designed and trained a 60-million parameter GPT-style language model end-to-end on Kaggle GPUs. Full pipeline: pretraining on TinyStories corpus, fine-tuned on Alpaca + DailyDialog + GSM8K for instruction following and conversational capability. No pretrained weights — everything from scratch.",
+      "name": "Radiology VLM",
+      "tagline": "Medical Visual Question Answering (Florence-2 + LoRA)",
+      "description": "Fine-tuned Microsoft Florence-2-base using PEFT/LoRA on the VQA-RAD dataset to build a Generative AI Vision-Language Model capable of answering free-form questions about medical X-Rays. Deployed an interactive Gradio web UI for local inference.",
       "technologies": [
         "PyTorch",
         "Transformers",
-        "CUDA",
-        "Distributed Training",
-        "Python"
+        "PEFT/LoRA",
+        "Florence-2",
+        "Gradio"
       ],
-      "highlight": "60M parameters · Trained from scratch · Instruction-tuned",
+      "highlight": "Vision-Language Model · LoRA fine-tuning",
       "featured": true,
-      "github": "https://github.com/achbj/Small-LLM-with-60M-Paramaters-Train-in-Kaggle",
-      "demo": ""
+      "github": "https://github.com/achbj/radiology-vlm",
+      "demo": "https://huggingface.co/MrEngineer/florence-2-vqa-lora"
+    },
+    {
+      "name": "ClinIQ Edge",
+      "tagline": "Clinical LLM Fine-tuning for Edge Deployment (Gemma 4)",
+      "description": "Fine-tuned Google Gemma 4 (4B) for clinical question answering, targeting edge deployment with efficient inference. Focused on instruction alignment for medical dialogue and diagnostic reasoning in resource-constrained environments.",
+      "technologies": ["PyTorch", "Transformers", "PEFT", "Gemma 4", "QLoRA"],
+      "highlight": "Clinical LLM · Edge Deployment",
+      "featured": true,
+      "github": "https://github.com/achbj/cliniq-edge-fine-tuning",
+      "demo": "https://huggingface.co/MrEngineer/ClinIQ-Edge-gemma-4-e4b-it"
     },
     {
       "name": "AI Agent Workflow Automation",
@@ -144,36 +153,13 @@
       "demo": ""
     },
     {
-      "name": "End-to-End Medallion Analytics Platform",
+      "name": "End-to-End Analytics Platform",
       "tagline": "Bronze → Silver → Gold. Analytics-ready data at scale.",
-      "description": "Multi-layer data pipeline using Medallion Architecture on AWS Databricks. Handles raw ingestion, quality transformation, aggregation, and Power BI reporting. Built with a two-person team.",
-      "technologies": [
-        "Python",
-        "SQL",
-        "Databricks",
-        "Apache Spark",
-        "dbt",
-        "Power BI"
-      ],
+      "description": "Multi-layer data pipeline using Medallion Architecture. Implemented multi-layer data pipeline (Bronze/Silver/Gold) enabling analytics-ready data and business reporting.",
+      "technologies": ["Python", "SQL", "DuckDB", "Power BI"],
       "highlight": "Full medallion architecture · Team project",
       "featured": false,
       "github": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization",
-      "demo": ""
-    },
-    {
-      "name": "Brain Tumor MRI Classification",
-      "tagline": "CNN-based malignant vs benign classification.",
-      "description": "Convolutional neural network for classifying brain tumor MRI scans as malignant or benign. Deep learning applied to medical imaging with real clinical relevance.",
-      "technologies": [
-        "Python",
-        "TensorFlow",
-        "Keras",
-        "CNN",
-        "Medical Imaging"
-      ],
-      "highlight": "Medical imaging · Deep learning",
-      "featured": false,
-      "github": "https://github.com/achbj/machine-learning-portfolio",
       "demo": ""
     }
   ],
@@ -188,45 +174,30 @@
         "Transformers",
         "LLMs",
         "Fine-tuning",
-        "Scikit-learn",
-        "CUDA"
+        "LoRA/PEFT"
       ]
     },
     {
       "group": "Data",
-      "items": [
-        "SQL",
-        "DuckDB",
-        "Pandas",
-        "NumPy",
-        "Data Pipelines",
-        "Apache Spark",
-        "dbt"
-      ]
+      "items": ["SQL", "DuckDB", "Pandas", "NumPy", "Data Pipelines"]
     },
     {
       "group": "Automation & Agents",
-      "items": [
-        "n8n",
-        "AI Agents",
-        "Claude API",
-        "Workflow Automation",
-        "REST APIs"
-      ]
+      "items": ["n8n", "AI Agents", "Workflow Automation", "LLM Tooling"]
     },
     {
       "group": "Visualization",
-      "items": ["Power BI", "Tableau", "Dashboard Dev"]
+      "items": ["Power BI", "Tableau", "Dashboard Development"]
     },
     {
       "group": "Engineering",
-      "items": ["Django", "React", "Git", "Docker", "GitHub Actions"]
+      "items": ["Django", "React", "Git", "Docker", "REST APIs"]
     }
   ],
 
   "contact": {
     "cta": "Open to Werkstudent roles, research collaborations, and full-time positions in Germany. Let's build something.",
-    "email": "hello@achbj.com",
+    "email": "bj.ach7@gmail.com",
     "availability": "Immediate · 20h/week during semester · Full-time during breaks"
   }
 }
