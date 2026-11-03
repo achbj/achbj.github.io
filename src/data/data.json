@@ -1,203 +1,216 @@
 {
-  "name": "Bijaya Acharya",
-  "title": "ML Engineer · Data Analytics · AI Researcher",
-  "email": "hello@achbj.com",
-  "linkedin": "linkedin.com/in/achbj",
-  "github": "github.com/achbj",
-  "github2": "github.com/bonzainsights",
-  "location": "Hildesheim, Germany",
-  "availability": "Open to Werkstudent (20h/week) · Full-time during breaks · Blue Card sponsorship welcome",
-
-  "typewriterLines": [
-    "I train language models from scratch.",
-    "256M parameters. Lightning.ai's GPU. Real results.",
-    "Researcher. Engineer. Builder.",
-    "From Kathmandu to Hildesheim — shipping ML.",
-    "Currently: MSc Data Analytics @ Hildesheim."
-  ],
-
-  "about": [
-    "I build ML/AI & Data Analytics systems end-to-end —> from pretraining transformer architectures on raw corpora to deploying analytics pipelines in production. My research at NAAMII focused on imbalanced clinical cancer data, resulting in a published IEEE paper on radiation pneumonitis prediction using multi-omics approaches.",
-    "On the engineering side, I've shipped ML solutions for real businesses, designed medallion-architecture data pipelines, and automated analytical workflows using LLM-based agents. My flagship project, PIGPT-60M, is a 60-million parameter GPT I designed, trained, and fine-tuned entirely from scratch.",
-    "I'm currently pursuing my MSc in Data Analytics at the University of Hildesheim. Originally from Nepal, now based in Germany — chasing hard problems in AI and building things that actually work."
-  ],
-
-  "status": "Open to Werkstudent & research roles in Germany",
-
-  "education": [
-    {
-      "institution": "University of Hildesheim, Germany",
-      "degree": "MSc Data Analytics",
-      "dates": "Apr 2025 – Present",
-      "description": "Specializing in AI/ML, Data Pipelines, and AI Automation"
-    },
-    {
-      "institution": "Coventry University (Softwarica College), Nepal",
-      "degree": "BSc (Hons) Computing",
-      "dates": "2019 – 2022",
-      "description": "AI, Data Analysis, Distributed Systems, Algorithms, Agile"
-    }
-  ],
-
+  "profile": {
+    "name": "Bijaya Acharya",
+    "headline": "AI / ML engineering · MSc Data Analytics",
+    "location": "Hildesheim, Germany",
+    "email": "bj.ach7@gmail.com",
+    "phone": "+49 163 7079709",
+    "website": "https://achbj.github.io",
+    "github": "https://github.com/achbj",
+    "linkedin": "https://www.linkedin.com/in/achbj",
+    "summary": "I build applied machine learning systems, from training small language models and fine-tuning vision–language models to building tool-using agents, APIs, and analytics pipelines. MSc Data Analytics student at the University of Hildesheim.",
+    "availability": "Open to working-student and research roles · 20 h/week during semester",
+    "workAuthorization": "German student residence permit · Full-time during semester breaks"
+  },
   "experience": [
     {
-      "title": "Research Intern / Assistant",
-      "company": "NAAMII — Nepal Applied Mathematics & Informatics Institute",
-      "dates": "Jun 2024 – Dec 2024",
-      "highlight": "IEEE Early Access paper published",
-      "bullets": [
-        "Analyzed ML/AI trends and developed practical solutions for real-world imbalanced clinical cancer datasets",
-        "Designed ML pipeline workflows supporting research-driven decision making on radiation pneumonitis prediction",
-        "Translated complex model predictions into actionable insights for clinical interpretation",
-        "Co-authored IEEE paper: multi-omics, multi-regional approach on NRG/RTOG 0617 trial data"
+      "role": "Research Intern / Assistant",
+      "organization": "NAAMII · Nepal Applied Mathematics and Informatics Institute for Research",
+      "location": "Kathmandu, Nepal",
+      "period": "Jun–Dec 2024",
+      "details": [
+        "Built and evaluated ML workflows for imbalanced clinical cancer datasets, supporting interpretation of model outputs.",
+        "Contributed analysis, research support, and documentation to an IEEE Early Access publication."
       ]
     },
     {
-      "title": "Machine Learning Engineer (Contract)",
-      "company": "Global Tech Nepal Pvt. Ltd.",
-      "dates": "Jan 2023 – Jan 2024",
-      "highlight": "End-to-end ML solutions for SMBs",
-      "bullets": [
-        "Developed and deployed ML/AI solutions focused on real-world business applicability for small businesses",
-        "Collaborated with cross-functional teams to align AI capabilities with project objectives",
-        "Designed scalable analytics and automation concepts for operational processes"
-      ]
-    },
-    {
-      "title": "Data Analytics Intern",
-      "company": "Kush Fintech",
-      "dates": "Aug 2023 – Nov 2023",
-      "highlight": "Agricultural & fintech analytics",
-      "bullets": [
-        "Analyzed operational and agricultural datasets to support data-driven decisions",
-        "Created dashboards and visual reports for non-technical stakeholders",
-        "Developed early-stage predictive analytics use cases for agricultural data flows"
+      "role": "Machine Learning Engineer · Contract",
+      "organization": "Global Tech Nepal Pvt. Ltd.",
+      "location": "Kathmandu, Nepal",
+      "period": "Jan 2023–Jan 2024",
+      "details": [
+        "Developed and deployed Python-based ML and data solutions for small-business use cases.",
+        "Worked across teams on analytics, automation, and practical delivery requirements."
       ]
     }
   ],
-
-  "research": [
+  "education": [
     {
-      "title": "ML Models Predicting Radiation Pneumonitis via Multi-Omics & Multi-Regional Approach",
-      "venue": "IEEE",
-      "status": "Early Access",
+      "degree": "MSc Data Analytics",
+      "institution": "University of Hildesheim",
+      "location": "Germany",
+      "period": "Apr 2025–Present"
+    },
+    {
+      "degree": "BSc (Hons) Computing",
+      "institution": "Coventry University · Softwarica College",
+      "location": "Kathmandu, Nepal",
+      "period": "2019–2022"
+    }
+  ],
+  "coursework": [
+    "AI",
+    "Data analysis",
+    "Distributed systems",
+    "Algorithms",
+    "Agile development"
+  ],
+  "publication": [
+    {
+      "title": "Machine Learning Models Predicting Radiation Pneumonitis Based on a Multi-Omics and Multi-Regional Approach in Patients with Lung Cancer Treated on the NRG/RTOG 0617 Clinical Trial",
+      "venue": "IEEE · Early Access",
       "year": "2025",
-      "description": "Machine learning models for predicting radiation pneumonitis in lung cancer patients using a multi-omics and multi-regional approach, evaluated on the NRG/RTOG 0617 clinical trial dataset. Tackles severely imbalanced clinical data.",
-      "link": "https://ieeexplore.ieee.org/document/11402923",
-      "tags": [
-        "Clinical ML",
-        "Imbalanced Data",
-        "Multi-Omics",
-        "Cancer Research",
-        "PyTorch"
-      ]
+      "contribution": "Clinical ML research and analysis contribution",
+      "url": "https://ieeexplore.ieee.org/document/11402923"
     }
   ],
-
   "projects": [
     {
-      "name": "NovaMind-256M",
-      "tagline": "Conversational AI Model from Scratch",
-      "description": "Designed and trained a 256 million parameter model with mixed architecture from top open source language models on Lightning.ai's H100 GPU. Implemented full training pipeline: pre-training on FineWeb-Edu + TinyStories, fine-tuning on Alpaca + DailyDialog + ShareGPT for instruction following, and OpenHermes-2.5 + GSM8K for CoT.",
-      "technologies": [
-        "PyTorch",
-        "Transformers",
-        "CUDA",
-        "Distributed Training"
+      "title": "MRAgent",
+      "category": "Agent systems",
+      "description": "Local Python AI agent extending nanobot with a streaming web interface, voice input, tool use, MCP integrations, scheduling, and model-provider setup.",
+      "stack": [
+        "Python",
+        "MCP",
+        "LLM APIs",
+        "Tool use"
       ],
-      "highlight": "256M parameters · Trained from scratch · Instruction-tuned",
-      "featured": true,
-      "github": "https://github.com/achbj/novamind-256m",
-      "demo": "https://huggingface.co/NewToTheTown/novamind-256m"
+      "repository": "https://github.com/achbj/MrAgent"
     },
     {
-      "name": "Radiology VLM",
-      "tagline": "Medical Visual Question Answering (Florence-2 + LoRA)",
-      "description": "Fine-tuned Microsoft Florence-2-base using PEFT/LoRA on the VQA-RAD dataset to build a Generative AI Vision-Language Model capable of answering free-form questions about medical X-Rays. Deployed an interactive Gradio web UI for local inference.",
-      "technologies": [
+      "title": "NovaMind 256M",
+      "category": "Language models",
+      "description": "Designed and trained a ~256M-parameter conversational transformer from scratch, including pretraining, instruction tuning, and H100-based training.",
+      "stack": [
         "PyTorch",
         "Transformers",
-        "PEFT/LoRA",
+        "LLM training"
+      ],
+      "repository": "https://github.com/achbj/novamind-256m",
+      "extraLink": {
+        "label": "Model",
+        "url": "https://huggingface.co/MrEngineer/novamind-256m"
+      }
+    },
+    {
+      "title": "SketchAWQ",
+      "category": "Quantization research",
+      "description": "Experimental post-training quantization pipeline studying lightweight Hessian-sketch signals for AWQ-style scaling, with reproducible evaluation configurations.",
+      "stack": [
+        "Python",
+        "Quantization",
+        "Evaluation"
+      ],
+      "repository": "https://github.com/achbj/sketchawq"
+    },
+    {
+      "title": "Radiology VLM",
+      "category": "Medical AI",
+      "description": "Fine-tuned Florence-2 with LoRA on VQA-RAD for image-grounded radiology question answering; packaged local Gradio and serverless API interfaces.",
+      "stack": [
         "Florence-2",
+        "LoRA / PEFT",
         "Gradio"
       ],
-      "highlight": "Vision-Language Model · LoRA fine-tuning",
-      "featured": true,
-      "github": "https://github.com/achbj/radiology-vlm",
-      "demo": "https://huggingface.co/MrEngineer/florence-2-vqa-lora"
+      "repository": "https://github.com/achbj/radiology-vlm"
     },
     {
-      "name": "ClinIQ Edge",
-      "tagline": "Clinical LLM Fine-tuning for Edge Deployment (Gemma 4)",
-      "description": "Fine-tuned Google Gemma 4 (4B) for clinical question answering, targeting edge deployment with efficient inference. Focused on instruction alignment for medical dialogue and diagnostic reasoning in resource-constrained environments.",
-      "technologies": ["PyTorch", "Transformers", "PEFT", "Gemma 4", "QLoRA"],
-      "highlight": "Clinical LLM · Edge Deployment",
-      "featured": true,
-      "github": "https://github.com/achbj/cliniq-edge-fine-tuning",
-      "demo": "https://huggingface.co/MrEngineer/ClinIQ-Edge-gemma-4-e4b-it"
-    },
-    {
-      "name": "AI Agent Workflow Automation",
-      "tagline": "LLM agents automating consultant workflows.",
-      "description": "Designed AI agent workflows using LLM-based tools and n8n to automate analytical and reporting tasks. Integrated Claude API with custom Python tooling to improve consultant productivity through automated data retrieval, summarization, and report generation.",
-      "technologies": [
-        "n8n",
-        "Claude API",
-        "Python",
-        "LLM Tooling",
-        "REST APIs"
+      "title": "ClinIQ Edge",
+      "category": "Efficient fine-tuning",
+      "description": "Medical-language-model fine-tuning workflow using Gemma 4, Unsloth QLoRA, and cloud GPU training, with export for local inference.",
+      "stack": [
+        "QLoRA",
+        "Gemma",
+        "Modal"
       ],
-      "highlight": "Multi-agent orchestration · Production automation",
-      "featured": true,
-      "github": "https://github.com/bonzainsights/mragent",
-      "demo": ""
+      "repository": "https://github.com/achbj/cliniq-edge-fine-tuning"
     },
     {
-      "name": "End-to-End Analytics Platform",
-      "tagline": "Bronze → Silver → Gold. Analytics-ready data at scale.",
-      "description": "Multi-layer data pipeline using Medallion Architecture. Implemented multi-layer data pipeline (Bronze/Silver/Gold) enabling analytics-ready data and business reporting.",
-      "technologies": ["Python", "SQL", "DuckDB", "Power BI"],
-      "highlight": "Full medallion architecture · Team project",
-      "featured": false,
-      "github": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization",
-      "demo": ""
+      "title": "Pneumonia Detection API",
+      "category": "Applied vision",
+      "description": "Fine-tuned a ViT model for chest X-ray classification and served predictions through a serverless FastAPI endpoint on Modal.",
+      "stack": [
+        "ViT",
+        "FastAPI",
+        "Modal"
+      ],
+      "repository": "https://github.com/achbj/pneumonia-api"
+    },
+    {
+      "title": "Analytics Data Platform",
+      "category": "Data engineering",
+      "description": "Built a Bronze / Silver / Gold analytics pipeline for reporting using SQL and data transformation workflows, with dashboard outputs.",
+      "stack": [
+        "Python",
+        "SQL",
+        "Data pipelines",
+        "Power BI"
+      ],
+      "repository": "https://github.com/DS-DA-Guys/Databricks-End-to-End-with-Visualization"
+    },
+    {
+      "title": "Customer Churn ML",
+      "category": "End-to-end ML",
+      "description": "DuckDB ingestion, preprocessing, model comparison, and a Flask prediction service for customer churn; documented ROC-AUC of 0.8717.",
+      "stack": [
+        "DuckDB",
+        "Scikit-learn",
+        "Flask"
+      ],
+      "repository": "https://github.com/achbj/customer-churn-end-to-end-ml-deployment"
     }
   ],
-
   "skills": [
     {
-      "group": "AI / ML",
+      "label": "ML & modeling",
       "items": [
         "Python",
         "PyTorch",
         "TensorFlow",
         "Transformers",
-        "LLMs",
-        "Fine-tuning",
-        "LoRA/PEFT"
+        "LoRA / PEFT",
+        "LLM fine-tuning",
+        "CUDA basics"
       ]
     },
     {
-      "group": "Data",
-      "items": ["SQL", "DuckDB", "Pandas", "NumPy", "Data Pipelines"]
+      "label": "Agents & APIs",
+      "items": [
+        "AI agents",
+        "MCP tools",
+        "OpenAI API",
+        "Anthropic API",
+        "REST APIs",
+        "n8n",
+        "FastAPI"
+      ]
     },
     {
-      "group": "Automation & Agents",
-      "items": ["n8n", "AI Agents", "Workflow Automation", "LLM Tooling"]
+      "label": "Data & analytics",
+      "items": [
+        "SQL",
+        "DuckDB",
+        "Pandas",
+        "NumPy",
+        "Power BI",
+        "Tableau",
+        "Data pipelines"
+      ]
     },
     {
-      "group": "Visualization",
-      "items": ["Power BI", "Tableau", "Dashboard Development"]
-    },
-    {
-      "group": "Engineering",
-      "items": ["Django", "React", "Git", "Docker", "REST APIs"]
+      "label": "Software",
+      "items": [
+        "Git",
+        "Docker",
+        "Django",
+        "React",
+        "Workflow automation"
+      ]
     }
   ],
-
-  "contact": {
-    "cta": "Open to Werkstudent roles, research collaborations, and full-time positions in Germany. Let's build something.",
-    "email": "bj.ach7@gmail.com",
-    "availability": "Immediate · 20h/week during semester · Full-time during breaks"
-  }
+  "languages": [
+    "English — fluent",
+    "Nepali — native",
+    "German — A2"
+  ]
 }
