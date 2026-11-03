@@ -20,7 +20,7 @@ jobs:
           node-version: '22'
           cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: npm install --no-audit --no-fund
       - name: Test
         run: CI=true npm test -- --watchAll=false
       - name: Build
