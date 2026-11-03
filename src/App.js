@@ -44,7 +44,6 @@ function App() {
         <div className="contact-block">
           <div className="contact-location">{profile.location}</div>
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          <a href={`tel:${profile.phone.replace(/\s/g, '')}`}>{profile.phone}</a>
           <div className="social-row">
             <ExternalLink href={profile.github}>GitHub</ExternalLink>
             <ExternalLink href={profile.linkedin}>LinkedIn</ExternalLink>
