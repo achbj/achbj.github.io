@@ -19,7 +19,7 @@
       "period": "Jun–Dec 2024",
       "details": [
         "Built and evaluated ML workflows for imbalanced clinical cancer datasets, supporting interpretation of model outputs.",
-        "Contributed analysis, research support, and documentation to an IEEE Early Access publication."
+        "Contributed analysis, research support, and documentation to an IEEE publication."
       ]
     },
     {
@@ -57,7 +57,7 @@
   "publication": [
     {
       "title": "Machine Learning Models Predicting Radiation Pneumonitis Based on a Multi-Omics and Multi-Regional Approach in Patients with Lung Cancer Treated on the NRG/RTOG 0617 Clinical Trial",
-      "venue": "IEEE · Early Access",
+      "venue": "IEEE",
       "year": "2025",
       "contribution": "Clinical ML research and analysis contribution",
       "url": "https://ieeexplore.ieee.org/document/11402923"
