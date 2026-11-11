@@ -103,6 +103,17 @@
       "repository": "https://github.com/achbj/sketchawq"
     },
     {
+      "title": "SilentWitness",
+      "category": "On-device AI",
+      "description": "Offline, privacy-preserving assistant built on Gemma 4 that helps document abuse without an internet connection. Built for the Kaggle Gemma 4 Good Hackathon (Safety & Trust track).",
+      "stack": [
+        "Python",
+        "Gemma 4",
+        "On-device AI"
+      ],
+      "repository": "https://github.com/achbj/SilentWitness"
+    },
+    {
       "title": "Radiology VLM",
       "category": "Medical AI",
       "description": "Fine-tuned Florence-2 with LoRA on VQA-RAD for image-grounded radiology question answering; packaged local Gradio and serverless API interfaces.",
