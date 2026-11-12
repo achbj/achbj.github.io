@@ -1,15 +1,15 @@
 {
   "profile": {
     "name": "Bijaya Acharya",
-    "headline": "AI / ML engineering · MSc Data Analytics",
+    "headline": "ML engineer · LLM efficiency, agents & RAG · MSc Data Analytics",
     "location": "Hildesheim, Germany",
     "email": "bj.ach7@gmail.com",
     "website": "https://achbj.github.io",
     "github": "https://github.com/achbj",
     "linkedin": "https://www.linkedin.com/in/achbj",
-    "summary": "I build applied machine learning systems, from training small language models and fine-tuning vision–language models to building tool-using agents, APIs, and analytics pipelines. MSc Data Analytics student at the University of Hildesheim.",
-    "availability": "Open to working-student and research roles · 20 h/week during semester",
-    "workAuthorization": "German student residence permit · Full-time during semester breaks"
+    "summary": "I build LLM systems end to end: compressing models with post-training quantization, training and fine-tuning language and vision-language models, and shipping agents and RAG services with tests and evaluations. MSc Data Analytics student at the University of Hildesheim, researching 2-bit LLM quantization.",
+    "availability": "Open to working-student and HiWi roles · 20 h/week · remote in Germany, or Hildesheim / Hannover / Braunschweig",
+    "workAuthorization": "Residence permit (§16b) valid until Oct 2028 · full-time during semester breaks"
   },
   "experience": [
     {
@@ -56,25 +56,60 @@
   ],
   "publication": [
     {
+      "title": "ScaleFit: 2-bit post-training quantization of LLMs on a single consumer GPU",
+      "venue": "Student Research Project · University of Hildesheim",
+      "year": "2026, ongoing",
+      "contribution": "Llama-3.1-8B at 2 bits: WikiText-2 perplexity 9.59 with 5.7 GiB peak GPU memory. Code on request.",
+      "url": null
+    },
+    {
       "title": "Machine Learning Models Predicting Radiation Pneumonitis Based on a Multi-Omics and Multi-Regional Approach in Patients with Lung Cancer Treated on the NRG/RTOG 0617 Clinical Trial",
       "venue": "IEEE",
       "year": "2025",
-      "contribution": "Clinical ML research and analysis contribution",
+      "contribution": "Contributed clinical ML analysis, research support and documentation.",
       "url": "https://ieeexplore.ieee.org/document/11402923"
     }
   ],
   "projects": [
     {
-      "title": "MRAgent",
-      "category": "Agent systems",
-      "description": "Local Python AI agent extending nanobot with a streaming web interface, voice input, tool use, MCP integrations, scheduling, and model-provider setup.",
+      "title": "quant-paper-rag",
+      "category": "RAG & LLM apps",
+      "description": "RAG over LLM-quantization papers: hybrid BM25 + dense retrieval, Claude answering through a search tool, and page-level citations checked against what was retrieved. Includes a labelled retrieval eval (recall@5 0.90).",
       "stack": [
         "Python",
-        "MCP",
-        "LLM APIs",
-        "Tool use"
+        "Claude API",
+        "FastAPI",
+        "Modal"
       ],
-      "repository": "https://github.com/achbj/MrAgent"
+      "repository": "https://github.com/achbj/quant-paper-rag"
+    },
+    {
+      "title": "MRAgent",
+      "category": "Agent systems",
+      "description": "Open-source terminal AI coding agent: file, shell, search, git and browser tools across 7 LLM providers, with context compaction, cost tracking, chat history and a task scheduler. Published on PyPI.",
+      "stack": [
+        "Python",
+        "Tool use",
+        "LLM APIs",
+        "SQLite"
+      ],
+      "repository": "https://github.com/BonzaInsights/MrAgent",
+      "extraLink": {
+        "label": "PyPI",
+        "url": "https://pypi.org/project/bonza-mragent/"
+      }
+    },
+    {
+      "title": "SketchAWQ",
+      "category": "Quantization research",
+      "description": "3/4-bit post-training quantization adding a low-rank Hessian sketch to AWQ-style scale search, with packed INT3/INT4 export. Lower INT3 perplexity than GPTQ on Qwen3-4B, Llama-2-7B and Mistral-7B; 2.6× faster to quantize.",
+      "stack": [
+        "PyTorch",
+        "Quantization",
+        "Modal",
+        "Evaluation"
+      ],
+      "repository": "https://github.com/achbj/SketchAWQ-v0"
     },
     {
       "title": "NovaMind 256M",
@@ -90,17 +125,6 @@
         "label": "Model",
         "url": "https://huggingface.co/MrEngineer/novamind-256m"
       }
-    },
-    {
-      "title": "SketchAWQ",
-      "category": "Quantization research",
-      "description": "Experimental post-training quantization pipeline studying lightweight Hessian-sketch signals for AWQ-style scaling, with reproducible evaluation configurations.",
-      "stack": [
-        "Python",
-        "Quantization",
-        "Evaluation"
-      ],
-      "repository": "https://github.com/achbj/sketchawq"
     },
     {
       "title": "SilentWitness",
@@ -123,17 +147,6 @@
         "Gradio"
       ],
       "repository": "https://github.com/achbj/radiology-vlm"
-    },
-    {
-      "title": "ClinIQ Edge",
-      "category": "Efficient fine-tuning",
-      "description": "Medical-language-model fine-tuning workflow using Gemma 4, Unsloth QLoRA, and cloud GPU training, with export for local inference.",
-      "stack": [
-        "QLoRA",
-        "Gemma",
-        "Modal"
-      ],
-      "repository": "https://github.com/achbj/cliniq-edge-fine-tuning"
     },
     {
       "title": "Pneumonia Detection API",
@@ -176,23 +189,21 @@
       "items": [
         "Python",
         "PyTorch",
-        "TensorFlow",
         "Transformers",
         "LoRA / PEFT",
-        "LLM fine-tuning",
-        "CUDA basics"
+        "LLM training & fine-tuning",
+        "Post-training quantization (GPTQ, AWQ)"
       ]
     },
     {
-      "label": "Agents & APIs",
+      "label": "LLM apps & agents",
       "items": [
-        "AI agents",
-        "MCP tools",
-        "OpenAI API",
+        "RAG & hybrid retrieval",
+        "Tool use / MCP",
+        "Structured outputs",
         "Anthropic API",
-        "REST APIs",
-        "n8n",
-        "FastAPI"
+        "OpenAI API",
+        "Retrieval evaluation"
       ]
     },
     {
@@ -203,18 +214,18 @@
         "Pandas",
         "NumPy",
         "Power BI",
-        "Tableau",
-        "Data pipelines"
+        "Tableau"
       ]
     },
     {
-      "label": "Software",
+      "label": "Engineering",
       "items": [
-        "Git",
+        "FastAPI",
         "Docker",
-        "Django",
-        "React",
-        "Workflow automation"
+        "Modal",
+        "Git",
+        "pytest",
+        "React"
       ]
     }
   ],

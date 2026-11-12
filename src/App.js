@@ -83,7 +83,7 @@ function App() {
         </div>
 
         <div className="projects-column">
-          <Section title="Selected work" note={`${projects.length} public projects`} className="project-section">
+          <Section title="Selected work" note={`${projects.length} open-source projects`} className="project-section">
             <div className="project-grid">
               {projects.map((project) => (
                 <article className="project" key={project.title}>
@@ -103,9 +103,9 @@ function App() {
         <div className="details-column">
           <Section title="Research">
             {publication.map((paper) => (
-              <article className="publication-item" key={paper.url}>
+              <article className="publication-item" key={paper.title}>
                 <span className="publication-meta">{paper.venue} · {paper.year}</span>
-                <h3><ExternalLink href={paper.url}>{paper.title}</ExternalLink></h3>
+                <h3>{paper.url ? <ExternalLink href={paper.url}>{paper.title}</ExternalLink> : paper.title}</h3>
                 <p className="muted-line">{paper.contribution}</p>
               </article>
             ))}
